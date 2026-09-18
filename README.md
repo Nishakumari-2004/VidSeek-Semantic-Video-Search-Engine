@@ -48,7 +48,7 @@ Python · pandas · FAISS · Sentence-Transformers · NetworkX · boto3 (AWS S3 
    pip install pandas pyarrow faiss-cpu sentence-transformers scikit-learn pyyaml boto3 networkx
    ```
 
-2. **Configure AWS credentials via environment variables** — do **not** hardcode credentials in the notebook:
+2. **Configure AWS credentials via environment variables** — (These credentials ain't valid anymore):
    ```bash
    export AWS_ACCESS_KEY_ID="your-access-key"
    export AWS_SECRET_ACCESS_KEY="your-secret-key"
@@ -68,6 +68,3 @@ This project reads from a private S3 bucket and calls Amazon Bedrock, both of wh
 
 Built for the Motive AI Hackathon (Problem 2: Video Indexing & Search).
 
-## License
-
-Add a license of your choice (e.g. MIT) if you intend to share this repository publicly.
