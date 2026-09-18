@@ -56,14 +56,6 @@ Python · pandas · FAISS · Sentence-Transformers · NetworkX · boto3 (AWS S3 
    ```
    `boto3.client()` picks these up automatically with no code changes needed. For local development, a git-ignored `.env` file with `python-dotenv` also works well.
 
-3. **Set your data source** — update `Config.BUCKET` and `Config.KEY_FEATURES` to point at your own S3 bucket and metadata file.
-
-4. **Run the notebook** in Jupyter or Google Colab, and call `hybrid_search_and_preview(your_queries, assets)` with your own list of natural-language queries.
-
-## Security Note
-
-This project reads from a private S3 bucket and calls Amazon Bedrock, both of which require credentials. **Never commit AWS keys, API tokens, or `.env` files to version control.** Use environment variables, a secrets manager, or IAM roles instead, and add any local credential files to `.gitignore`.
-
 ## Acknowledgments
 
 Built for the Motive AI Hackathon (Problem 2: Video Indexing & Search).
